@@ -16,5 +16,10 @@ namespace PryEdGaidoL
         {
             InitializeComponent();
         }
+
+        private void btnGrabarCl_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

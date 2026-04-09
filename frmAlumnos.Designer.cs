@@ -45,9 +45,10 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button1.Location = new System.Drawing.Point(386, 186);
+            this.button1.Location = new System.Drawing.Point(290, 151);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(139, 34);
+            this.button1.Size = new System.Drawing.Size(104, 28);
             this.button1.TabIndex = 0;
             this.button1.Text = "Grabar";
             this.button1.UseVisualStyleBackColor = true;
@@ -56,34 +57,38 @@
             // 
             this.cmbCarrera.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.cmbCarrera.FormattingEnabled = true;
-            this.cmbCarrera.Location = new System.Drawing.Point(111, 136);
+            this.cmbCarrera.Location = new System.Drawing.Point(83, 110);
+            this.cmbCarrera.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbCarrera.Name = "cmbCarrera";
-            this.cmbCarrera.Size = new System.Drawing.Size(414, 28);
+            this.cmbCarrera.Size = new System.Drawing.Size(312, 24);
             this.cmbCarrera.TabIndex = 1;
             // 
             // txtNombreA
             // 
             this.txtNombreA.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txtNombreA.Location = new System.Drawing.Point(111, 95);
+            this.txtNombreA.Location = new System.Drawing.Point(83, 77);
+            this.txtNombreA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNombreA.Name = "txtNombreA";
-            this.txtNombreA.Size = new System.Drawing.Size(414, 26);
+            this.txtNombreA.Size = new System.Drawing.Size(312, 23);
             this.txtNombreA.TabIndex = 2;
             // 
             // txtCodigoA
             // 
             this.txtCodigoA.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txtCodigoA.Location = new System.Drawing.Point(386, 61);
+            this.txtCodigoA.Location = new System.Drawing.Point(290, 50);
+            this.txtCodigoA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCodigoA.Name = "txtCodigoA";
-            this.txtCodigoA.Size = new System.Drawing.Size(139, 26);
+            this.txtCodigoA.Size = new System.Drawing.Size(105, 23);
             this.txtCodigoA.TabIndex = 3;
             // 
             // lblCodigoA
             // 
             this.lblCodigoA.AutoSize = true;
             this.lblCodigoA.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lblCodigoA.Location = new System.Drawing.Point(8, 67);
+            this.lblCodigoA.Location = new System.Drawing.Point(6, 54);
+            this.lblCodigoA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCodigoA.Name = "lblCodigoA";
-            this.lblCodigoA.Size = new System.Drawing.Size(66, 20);
+            this.lblCodigoA.Size = new System.Drawing.Size(56, 17);
             this.lblCodigoA.TabIndex = 4;
             this.lblCodigoA.Text = "Código:";
             // 
@@ -91,9 +96,10 @@
             // 
             this.lblNombreA.AutoSize = true;
             this.lblNombreA.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lblNombreA.Location = new System.Drawing.Point(8, 101);
+            this.lblNombreA.Location = new System.Drawing.Point(6, 82);
+            this.lblNombreA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNombreA.Name = "lblNombreA";
-            this.lblNombreA.Size = new System.Drawing.Size(73, 20);
+            this.lblNombreA.Size = new System.Drawing.Size(62, 17);
             this.lblNombreA.TabIndex = 5;
             this.lblNombreA.Text = "Nombre:";
             // 
@@ -101,9 +107,10 @@
             // 
             this.lblCarrera.AutoSize = true;
             this.lblCarrera.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lblCarrera.Location = new System.Drawing.Point(8, 139);
+            this.lblCarrera.Location = new System.Drawing.Point(6, 113);
+            this.lblCarrera.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCarrera.Name = "lblCarrera";
-            this.lblCarrera.Size = new System.Drawing.Size(71, 20);
+            this.lblCarrera.Size = new System.Drawing.Size(60, 17);
             this.lblCarrera.TabIndex = 6;
             this.lblCarrera.Text = "Carrera:";
             // 
@@ -114,11 +121,12 @@
             this.dgvCodigoA,
             this.dgvNombreA,
             this.dgvCarrera});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 241);
+            this.dataGridView1.Location = new System.Drawing.Point(9, 196);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(513, 220);
+            this.dataGridView1.Size = new System.Drawing.Size(385, 179);
             this.dataGridView1.TabIndex = 7;
             // 
             // dgvCodigoA
@@ -144,9 +152,9 @@
             // 
             // frmAlumnos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(537, 473);
+            this.ClientSize = new System.Drawing.Size(403, 384);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.lblCarrera);
             this.Controls.Add(this.lblNombreA);
@@ -155,10 +163,11 @@
             this.Controls.Add(this.txtNombreA);
             this.Controls.Add(this.cmbCarrera);
             this.Controls.Add(this.button1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmAlumnos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Alumnos";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

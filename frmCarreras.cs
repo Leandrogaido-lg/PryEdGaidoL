@@ -10,24 +10,24 @@ using System.Windows.Forms;
 
 namespace PryEdGaidoL
 {
-    public partial class frmColores : Form
+    public partial class frmCarreras : Form
     {
-        public frmColores()
+        public frmCarreras()
         {
             InitializeComponent();
         }
 
-        private void btnGrabarC_Click(object sender, EventArgs e)
+        private void btnGrabar_Click(object sender, EventArgs e)
         {
             clsArchivo x = new clsArchivo();
-            x.NomArchivo = "";
-            x.Grabar (txtNombreC.Text);
-            x.Recorrer(lstbColores);
+            x.NomArchivo = "Carreras.csv";
+            x.BorrarTodo();
+            x.Recorrer(lstbCarrera);
         }
 
-        //private void txtNombreC_TextChanged(object sender, EventArgs e)
+        //private void btnLimpiar_Click(object sender, EventArgs e)
+        
 
-
-
+        
     }
 }

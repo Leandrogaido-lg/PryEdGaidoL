@@ -27,5 +27,29 @@ namespace PryEdGaidoL
             frmDatosDesarrollador v = new frmDatosDesarrollador();
             v.ShowDialog();
         }
+
+        private void coloresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmColores c = new frmColores();
+            c.ShowDialog();
+        }
+
+        private void mesesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmMeses m = new frmMeses();    
+            m.ShowDialog();
+        }
+
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmClientes cl = new frmClientes();
+            cl.ShowDialog();
+        }
+
+        private void alumnosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAlumnos a = new frmAlumnos();
+            a.ShowDialog();
+        }
     }
 }

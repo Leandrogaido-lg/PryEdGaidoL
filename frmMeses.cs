@@ -16,5 +16,14 @@ namespace PryEdGaidoL
         {
             InitializeComponent();
         }
+
+        private void btnGrabar_Click(object sender, EventArgs e)
+        {
+            clsArchivo x = new clsArchivo();
+            x.NomArchivo = "";
+            x.Grabar(txtNombreM.Text);
+            x.Recorrer(lstbMeses);
+        }
+       
     }
 }
