@@ -52,7 +52,7 @@ namespace PryEdGaidoL
         }
 
 
-        public void Grabar(string Dato1, string Dato2, String Dato3)
+        public void Grabar(string Dato1, string Dato2, string Dato3)
 
         {
             StreamWriter AD = new StreamWriter(NomArchivo, true);
@@ -63,6 +63,38 @@ namespace PryEdGaidoL
             AD.WriteLine(Dato3);
             AD.Close();
 
+
+
+        }
+
+        public void Recorrer(DataGridView Grilla)
+        {
+            String DatoLeido = "";
+            Grilla.Rows.Clear();
+            StreamReader AD = new StreamReader(NomArchivo);
+            DatoLeido = AD.ReadLine();
+            while (DatoLeido != null)
+            {
+                Grilla.Rows.Add(DatoLeido.Split(';'));
+                DatoLeido = AD.ReadLine();
+            }
+            AD.Close();
+
+
+        }
+
+        public void Recorrer(ComboBox cmb)
+        {
+            String DatoLeido;
+            cmb.Items.Clear(); 
+            StreamReader AD = new StreamReader(NomArchivo);
+            DatoLeido = AD.ReadLine();
+            while (DatoLeido != null)
+            {
+                cmb.Items.Add(DatoLeido);
+                DatoLeido = AD.ReadLine();
+            }
+            AD.Close();
 
 
         }

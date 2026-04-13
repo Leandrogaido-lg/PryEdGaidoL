@@ -16,5 +16,13 @@ namespace PryEdGaidoL
         {
             InitializeComponent();
         }
+
+        private void btnGrabar_Click(object sender, EventArgs e)
+        {
+            clsArchivo objAlumnos= new clsArchivo();
+            objAlumnos.NomArchivo = "Alumnos.csv";
+            objAlumnos.Grabar(txtCodigoA.Text, txtNombreA.Text, cmbCarrera.Text);
+            objAlumnos.Recorrer(dgvAlumnos);
+        }-
     }
 }

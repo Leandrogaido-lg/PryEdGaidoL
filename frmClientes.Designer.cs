@@ -35,11 +35,11 @@
             this.lblNombreCl = new System.Windows.Forms.Label();
             this.lblDeuda = new System.Windows.Forms.Label();
             this.btnGrabarCl = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvClientes = new System.Windows.Forms.DataGridView();
             this.dgvcodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvDeuda = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
             this.SuspendLayout();
             // 
             // txtNombreCl
@@ -114,48 +114,46 @@
             this.btnGrabarCl.UseVisualStyleBackColor = true;
             this.btnGrabarCl.Click += new System.EventHandler(this.btnGrabarCl_Click);
             // 
-            // dataGridView1
+            // dgvClientes
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvClientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dgvcodigo,
             this.dgvNombre,
             this.dgvDeuda});
-            this.dataGridView1.Location = new System.Drawing.Point(9, 202);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(429, 172);
-            this.dataGridView1.TabIndex = 7;
+            this.dgvClientes.Location = new System.Drawing.Point(9, 202);
+            this.dgvClientes.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvClientes.Name = "dgvClientes";
+            this.dgvClientes.RowHeadersWidth = 51;
+            this.dgvClientes.RowTemplate.Height = 24;
+            this.dgvClientes.Size = new System.Drawing.Size(429, 172);
+            this.dgvClientes.TabIndex = 7;
             // 
             // dgvcodigo
             // 
             this.dgvcodigo.HeaderText = "Código";
             this.dgvcodigo.MinimumWidth = 6;
             this.dgvcodigo.Name = "dgvcodigo";
-            this.dgvcodigo.Width = 125;
+            this.dgvcodigo.Width = 80;
             // 
             // dgvNombre
             // 
             this.dgvNombre.HeaderText = "Nombre";
             this.dgvNombre.MinimumWidth = 6;
             this.dgvNombre.Name = "dgvNombre";
-            this.dgvNombre.Width = 225;
             // 
             // dgvDeuda
             // 
             this.dgvDeuda.HeaderText = "Deuda";
             this.dgvDeuda.MinimumWidth = 6;
             this.dgvDeuda.Name = "dgvDeuda";
-            this.dgvDeuda.Width = 125;
             // 
             // frmClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(459, 384);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(438, 384);
+            this.Controls.Add(this.dgvClientes);
             this.Controls.Add(this.btnGrabarCl);
             this.Controls.Add(this.lblDeuda);
             this.Controls.Add(this.lblNombreCl);
@@ -168,7 +166,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Clientes";
             this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -183,7 +181,7 @@
         private System.Windows.Forms.Label lblNombreCl;
         private System.Windows.Forms.Label lblDeuda;
         private System.Windows.Forms.Button btnGrabarCl;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvClientes;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvcodigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvNombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvDeuda;

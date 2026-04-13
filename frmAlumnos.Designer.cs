@@ -28,37 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnGrabar = new System.Windows.Forms.Button();
             this.cmbCarrera = new System.Windows.Forms.ComboBox();
             this.txtNombreA = new System.Windows.Forms.TextBox();
             this.txtCodigoA = new System.Windows.Forms.TextBox();
             this.lblCodigoA = new System.Windows.Forms.Label();
             this.lblNombreA = new System.Windows.Forms.Label();
             this.lblCarrera = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvAlumnos = new System.Windows.Forms.DataGridView();
             this.dgvCodigoA = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvNombreA = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvCarrera = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAlumnos)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // btnGrabar
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button1.Location = new System.Drawing.Point(290, 151);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(104, 28);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Grabar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnGrabar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnGrabar.Location = new System.Drawing.Point(290, 151);
+            this.btnGrabar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnGrabar.Name = "btnGrabar";
+            this.btnGrabar.Size = new System.Drawing.Size(104, 28);
+            this.btnGrabar.TabIndex = 0;
+            this.btnGrabar.Text = "Grabar";
+            this.btnGrabar.UseVisualStyleBackColor = true;
+            this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
             // 
             // cmbCarrera
             // 
             this.cmbCarrera.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.cmbCarrera.FormattingEnabled = true;
+            this.cmbCarrera.Items.AddRange(new object[] {
+            "Analista en Sistemas",
+            "Marketing",
+            "Recursos Humanos",
+            "Diseño Grafico",
+            "Inteligencia Artificial",
+            "Comercio Internacional ",
+            "Ciberseguridad"});
             this.cmbCarrera.Location = new System.Drawing.Point(83, 110);
-            this.cmbCarrera.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbCarrera.Margin = new System.Windows.Forms.Padding(2);
             this.cmbCarrera.Name = "cmbCarrera";
             this.cmbCarrera.Size = new System.Drawing.Size(312, 24);
             this.cmbCarrera.TabIndex = 1;
@@ -67,7 +76,7 @@
             // 
             this.txtNombreA.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.txtNombreA.Location = new System.Drawing.Point(83, 77);
-            this.txtNombreA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombreA.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombreA.Name = "txtNombreA";
             this.txtNombreA.Size = new System.Drawing.Size(312, 23);
             this.txtNombreA.TabIndex = 2;
@@ -76,7 +85,7 @@
             // 
             this.txtCodigoA.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.txtCodigoA.Location = new System.Drawing.Point(290, 50);
-            this.txtCodigoA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCodigoA.Margin = new System.Windows.Forms.Padding(2);
             this.txtCodigoA.Name = "txtCodigoA";
             this.txtCodigoA.Size = new System.Drawing.Size(105, 23);
             this.txtCodigoA.TabIndex = 3;
@@ -114,20 +123,20 @@
             this.lblCarrera.TabIndex = 6;
             this.lblCarrera.Text = "Carrera:";
             // 
-            // dataGridView1
+            // dgvAlumnos
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvAlumnos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvAlumnos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dgvCodigoA,
             this.dgvNombreA,
             this.dgvCarrera});
-            this.dataGridView1.Location = new System.Drawing.Point(9, 196);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(385, 179);
-            this.dataGridView1.TabIndex = 7;
+            this.dgvAlumnos.Location = new System.Drawing.Point(9, 196);
+            this.dgvAlumnos.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvAlumnos.Name = "dgvAlumnos";
+            this.dgvAlumnos.RowHeadersWidth = 51;
+            this.dgvAlumnos.RowTemplate.Height = 24;
+            this.dgvAlumnos.Size = new System.Drawing.Size(385, 179);
+            this.dgvAlumnos.TabIndex = 7;
             // 
             // dgvCodigoA
             // 
@@ -155,20 +164,20 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(403, 384);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvAlumnos);
             this.Controls.Add(this.lblCarrera);
             this.Controls.Add(this.lblNombreA);
             this.Controls.Add(this.lblCodigoA);
             this.Controls.Add(this.txtCodigoA);
             this.Controls.Add(this.txtNombreA);
             this.Controls.Add(this.cmbCarrera);
-            this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Controls.Add(this.btnGrabar);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmAlumnos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Alumnos";
             this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAlumnos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -176,14 +185,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnGrabar;
         private System.Windows.Forms.ComboBox cmbCarrera;
         private System.Windows.Forms.TextBox txtNombreA;
         private System.Windows.Forms.TextBox txtCodigoA;
         private System.Windows.Forms.Label lblCodigoA;
         private System.Windows.Forms.Label lblNombreA;
         private System.Windows.Forms.Label lblCarrera;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvAlumnos;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvCodigoA;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvNombreA;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvCarrera;

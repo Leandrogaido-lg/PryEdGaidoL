@@ -51,5 +51,11 @@ namespace PryEdGaidoL
             frmAlumnos a = new frmAlumnos();
             a.ShowDialog();
         }
+
+        private void carrerasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCarreras ca = new frmCarreras();
+            ca.ShowDialog();
+        }
     }
 }

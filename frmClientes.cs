@@ -19,7 +19,10 @@ namespace PryEdGaidoL
 
         private void btnGrabarCl_Click(object sender, EventArgs e)
         {
-
+            clsArchivo objClientes = new clsArchivo();
+            objClientes.NomArchivo = "Clientes.csv";
+            objClientes.Grabar(txtCodigo.Text, txtNombreCl.Text, txtDeuda.Text);
+            objClientes.Recorrer(dgvClientes);
         }
     }
 }
