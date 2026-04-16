@@ -80,7 +80,6 @@
             this.btnLimpiar.TabIndex = 4;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = true;
-            //this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // frmCarreras
             // 
@@ -95,7 +94,6 @@
             this.Name = "frmCarreras";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmCarreras";
-            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.ResumeLayout(false);
             this.PerformLayout();
 

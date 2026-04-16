@@ -57,5 +57,11 @@ namespace PryEdGaidoL
             frmCarreras ca = new frmCarreras();
             ca.ShowDialog();
         }
+
+        private void colaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCola co = new frmCola();
+            co.ShowDialog();
+        }
     }
 }

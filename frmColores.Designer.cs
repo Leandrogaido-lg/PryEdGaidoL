@@ -38,7 +38,7 @@
             // btnListarC
             // 
             this.btnListarC.Location = new System.Drawing.Point(18, 143);
-            this.btnListarC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnListarC.Margin = new System.Windows.Forms.Padding(2);
             this.btnListarC.Name = "btnListarC";
             this.btnListarC.Size = new System.Drawing.Size(122, 34);
             this.btnListarC.TabIndex = 0;
@@ -48,7 +48,7 @@
             // btnGrabarC
             // 
             this.btnGrabarC.Location = new System.Drawing.Point(172, 143);
-            this.btnGrabarC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGrabarC.Margin = new System.Windows.Forms.Padding(2);
             this.btnGrabarC.Name = "btnGrabarC";
             this.btnGrabarC.Size = new System.Drawing.Size(122, 34);
             this.btnGrabarC.TabIndex = 1;
@@ -71,7 +71,7 @@
             // 
             this.lstbColores.FormattingEnabled = true;
             this.lstbColores.Location = new System.Drawing.Point(18, 196);
-            this.lstbColores.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lstbColores.Margin = new System.Windows.Forms.Padding(2);
             this.lstbColores.Name = "lstbColores";
             this.lstbColores.Size = new System.Drawing.Size(277, 173);
             this.lstbColores.TabIndex = 3;
@@ -80,7 +80,7 @@
             // 
             this.txtNombreC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtNombreC.Location = new System.Drawing.Point(101, 56);
-            this.txtNombreC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombreC.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombreC.Name = "txtNombreC";
             this.txtNombreC.Size = new System.Drawing.Size(194, 26);
             this.txtNombreC.TabIndex = 4;
@@ -95,11 +95,10 @@
             this.Controls.Add(this.lblNombreC);
             this.Controls.Add(this.btnGrabarC);
             this.Controls.Add(this.btnListarC);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmColores";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmColores";
-            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.ResumeLayout(false);
             this.PerformLayout();
 

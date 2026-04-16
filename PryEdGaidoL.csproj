@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsArchivo.cs" />
+    <Compile Include="clsNodo.cs" />
     <Compile Include="frmAlumnos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +65,12 @@
     </Compile>
     <Compile Include="frmClientes.Designer.cs">
       <DependentUpon>frmClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCola.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCola.Designer.cs">
+      <DependentUpon>frmCola.cs</DependentUpon>
     </Compile>
     <Compile Include="frmColores.cs">
       <SubType>Form</SubType>
@@ -94,6 +101,9 @@
     <EmbeddedResource Include="frmClientes.resx">
       <DependentUpon>frmClientes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCola.resx">
+      <DependentUpon>frmCola.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmColores.resx">
       <DependentUpon>frmColores.cs</DependentUpon>
     </EmbeddedResource>
@@ -111,6 +121,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -124,6 +135,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\windows imagenç.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cola.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

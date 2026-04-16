@@ -50,7 +50,7 @@
             // 
             this.txtNombreM.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtNombreM.Location = new System.Drawing.Point(129, 53);
-            this.txtNombreM.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombreM.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombreM.Name = "txtNombreM";
             this.txtNombreM.Size = new System.Drawing.Size(196, 26);
             this.txtNombreM.TabIndex = 1;
@@ -58,7 +58,7 @@
             // btnListar
             // 
             this.btnListar.Location = new System.Drawing.Point(32, 135);
-            this.btnListar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnListar.Margin = new System.Windows.Forms.Padding(2);
             this.btnListar.Name = "btnListar";
             this.btnListar.Size = new System.Drawing.Size(136, 28);
             this.btnListar.TabIndex = 2;
@@ -68,7 +68,7 @@
             // btnGrabar
             // 
             this.btnGrabar.Location = new System.Drawing.Point(197, 135);
-            this.btnGrabar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGrabar.Margin = new System.Windows.Forms.Padding(2);
             this.btnGrabar.Name = "btnGrabar";
             this.btnGrabar.Size = new System.Drawing.Size(127, 28);
             this.btnGrabar.TabIndex = 3;
@@ -80,7 +80,7 @@
             // 
             this.lstbMeses.FormattingEnabled = true;
             this.lstbMeses.Location = new System.Drawing.Point(32, 180);
-            this.lstbMeses.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lstbMeses.Margin = new System.Windows.Forms.Padding(2);
             this.lstbMeses.Name = "lstbMeses";
             this.lstbMeses.Size = new System.Drawing.Size(294, 186);
             this.lstbMeses.TabIndex = 4;
@@ -95,11 +95,10 @@
             this.Controls.Add(this.btnListar);
             this.Controls.Add(this.txtNombreM);
             this.Controls.Add(this.lblNombre);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmMeses";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Meses";
-            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.ResumeLayout(false);
             this.PerformLayout();
 
