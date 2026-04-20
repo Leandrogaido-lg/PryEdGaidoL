@@ -58,14 +58,6 @@
             // 
             this.cmbCarrera.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.cmbCarrera.FormattingEnabled = true;
-            this.cmbCarrera.Items.AddRange(new object[] {
-            "Analista en Sistemas",
-            "Marketing",
-            "Recursos Humanos",
-            "Diseño Grafico",
-            "Inteligencia Artificial",
-            "Comercio Internacional ",
-            "Ciberseguridad"});
             this.cmbCarrera.Location = new System.Drawing.Point(83, 110);
             this.cmbCarrera.Margin = new System.Windows.Forms.Padding(2);
             this.cmbCarrera.Name = "cmbCarrera";
@@ -176,6 +168,7 @@
             this.Name = "frmAlumnos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Alumnos";
+            this.Load += new System.EventHandler(this.frmAlumnos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAlumnos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

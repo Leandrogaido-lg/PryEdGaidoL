@@ -23,6 +23,20 @@ namespace PryEdGaidoL
             objAlumnos.NomArchivo = "Alumnos.csv";
             objAlumnos.Grabar(txtCodigoA.Text, txtNombreA.Text, cmbCarrera.Text);
             objAlumnos.Recorrer(dgvAlumnos);
+
+            
+        }
+
+        public void CargarCarreras()
+        {
+            clsArchivo x = new clsArchivo();
+            x.NomArchivo = "Carreras.csv";
+            x.Recorrer(cmbCarrera);
+        }
+
+        private void frmAlumnos_Load(object sender, EventArgs e)
+        {
+            CargarCarreras();
         }
     }
 }

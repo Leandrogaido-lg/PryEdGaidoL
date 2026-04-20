@@ -12,36 +12,32 @@ namespace PryEdGaidoL
         private String nom;
         private String tra;
         private clsNodo sig;
-        private clsNodo ant;
-        public Int32 cod
+       
+        public Int32 Codigo
         {
             get { return cod; }
             set { cod = value; }
         }
 
-        public String nom
+        public String Nombre
         {
             get { return nom; }
             set { nom = value; }
         }
 
-        public String tra
+        public String Tràmite
         {
             get { return tra; }
             set { tra = value; }
         }
 
-        public clsNodo sig
+        public clsNodo Siguiente
         {
             get { return sig; }
             set { sig = value; }
         }   
 
-        public clsNodo ant
-        {
-            get { return ant; }
-            set { ant = value; }
-        }
+        
 
     }
 }

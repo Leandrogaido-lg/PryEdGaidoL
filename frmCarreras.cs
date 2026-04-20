@@ -22,12 +22,33 @@ namespace PryEdGaidoL
             clsArchivo x = new clsArchivo();
             x.NomArchivo = "Carreras.csv";
             x.BorrarTodo();
+            x.Grabar(txtCarrera.Text);
             x.Recorrer(lstbCarrera);
+
+            MessageBox.Show("La carrera " + txtCarrera.Text + " se ha grabado correctamente");
+
+            // Actualizar cualquier frmAlumnos abierto
+            foreach (Form f in Application.OpenForms)
+            {
+                if (f is frmAlumnos frm)
+                {
+                    frm.CargarCarreras();
+                }
+            }
+
+            txtCarrera.Clear();
         }
 
-        //private void btnLimpiar_Click(object sender, EventArgs e)
-        
+        private void frmCarreras_Load(object sender, EventArgs e)
+        {
+            clsArchivo x = new clsArchivo();
+            x.NomArchivo = "Carreras.cvs";
+            x.Recorrer(lstbCarrera);
+        }
+    }
+
+}       
 
         
-    }
-}
+    
+
