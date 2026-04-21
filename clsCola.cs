@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace PryEdGaidoL
 {
@@ -10,8 +11,6 @@ namespace PryEdGaidoL
     {
         private clsNodo pri;
         private clsNodo ult;
-
-
 
 
         public clsNodo Primero
@@ -24,6 +23,51 @@ namespace PryEdGaidoL
         {
             get { return ult; }
             set { ult = value; }
-        }   
+        }
+
+        public void Agregar(clsNodo Nuevo)
+        {
+            if (Primero != null)
+            {
+                Primero = Nuevo;
+                Ultimo = Nuevo;
+
+            }
+            else
+            {
+                Ultimo.Siguiente = Nuevo;
+                Ultimo = Nuevo;
+            }
+        }
+
+        public void Eliminar ()
+        {
+            if(Primero == Ultimo)
+            {
+                Primero = null;
+                Ultimo = null;
+
+            }
+            else
+            {
+                Primero = Primero.Siguiente;
+            }
+
+
+        }
+
+        public void Recorrer (DataGridView Grilla)
+        {
+            clsNodo aux = Primero;
+            Grilla.Rows.Clear ();
+
+            while (aux != null)
+            {
+                Grilla.Rows.Add(aux.Codigo, aux.Nombre, aux.Tràmite);
+                aux = aux.Siguiente;
+            
+            }
+        
+        }
     }
 }

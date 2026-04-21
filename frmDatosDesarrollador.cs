@@ -24,7 +24,7 @@ namespace PryEdGaidoL
 
         private void datosDelDesarrolladorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmDatosDesarrollador v = new frmDatosDesarrollador();
+            frmInformacionDelCreador v = new frmInformacionDelCreador();
             v.ShowDialog();
         }
 

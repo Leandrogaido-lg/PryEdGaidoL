@@ -21,7 +21,7 @@ namespace PryEdGaidoL
         {
             clsArchivo x = new clsArchivo();
             x.NomArchivo = "Carreras.csv";
-            x.BorrarTodo();
+           
             x.Grabar(txtCarrera.Text);
             x.Recorrer(lstbCarrera);
 
