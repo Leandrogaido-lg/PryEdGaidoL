@@ -23,6 +23,21 @@ namespace PryEdGaidoL
             x.NomArchivo = "";
             x.Grabar (txtNombreC.Text);
             x.Recorrer(lstbColores);
+            MessageBox.Show("Datos Grabados");
+
+            txtNombreC.Text = "";
+        }
+
+        private void txtNombreC_TextChanged(object sender, EventArgs e)
+        {
+            if (txtNombreC.Text == "")
+            {
+                btnGrabarC.Enabled = false;
+            }
+            else
+            {
+                btnGrabarC.Enabled = true;
+            }
         }
 
         //private void txtNombreC_TextChanged(object sender, EventArgs e)

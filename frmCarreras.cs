@@ -45,6 +45,20 @@ namespace PryEdGaidoL
             x.NomArchivo = "Carreras.cvs";
             x.Recorrer(lstbCarrera);
         }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            if (lstbCarrera.Items.Count == 0)
+            {
+                MessageBox.Show("No hay Carreras Cargados para borrar");
+                return;
+            }
+            clsArchivo x = new clsArchivo();
+            x.NomArchivo = "Carrera.csv"; //csv excel
+            x.BorrarTodo();
+            x.Recorrer(lstbCarrera);
+            MessageBox.Show("Datos Borrados");
+        }
     }
 
 }       

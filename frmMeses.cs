@@ -23,7 +23,22 @@ namespace PryEdGaidoL
             x.NomArchivo = "";
             x.Grabar(txtNombreM.Text);
             x.Recorrer(lstbMeses);
+            MessageBox.Show("Datos Grabados");
+
+            txtNombreM.Text = "";
         }
-       
+
+        private void txtNombreM_TextChanged(object sender, EventArgs e)
+        {
+
+            if (txtNombreM.Text == "")
+            {
+                btnGrabar.Enabled = false;
+            }
+            else
+            {
+                btnGrabar.Enabled = true;
+            }
+        }
     }
 }
