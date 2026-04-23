@@ -30,6 +30,7 @@
         {
             this.picBCola = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblSombraT = new System.Windows.Forms.Label();
             this.lblSombraN = new System.Windows.Forms.Label();
             this.lblSombraC = new System.Windows.Forms.Label();
             this.btnEliminar = new System.Windows.Forms.Button();
@@ -45,12 +46,11 @@
             this.lblNombre1 = new System.Windows.Forms.Label();
             this.lblTramite1 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.lblSombraT = new System.Windows.Forms.Label();
+            this.lstbCola = new System.Windows.Forms.ListBox();
             this.dgvCola = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lstbCola = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.picBCola)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -84,6 +84,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Elemento Eliminado";
             // 
+            // lblSombraT
+            // 
+            this.lblSombraT.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblSombraT.Location = new System.Drawing.Point(70, 90);
+            this.lblSombraT.Name = "lblSombraT";
+            this.lblSombraT.Size = new System.Drawing.Size(98, 23);
+            this.lblSombraT.TabIndex = 11;
+            // 
             // lblSombraN
             // 
             this.lblSombraN.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -111,6 +119,7 @@
             this.btnEliminar.TabIndex = 8;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // lblTramite2
             // 
@@ -187,6 +196,7 @@
             this.btnAgregar.TabIndex = 7;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // lblCodigo1
             // 
@@ -229,13 +239,13 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Listado en una lista y una grilla";
             // 
-            // lblSombraT
+            // lstbCola
             // 
-            this.lblSombraT.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblSombraT.Location = new System.Drawing.Point(70, 90);
-            this.lblSombraT.Name = "lblSombraT";
-            this.lblSombraT.Size = new System.Drawing.Size(98, 23);
-            this.lblSombraT.TabIndex = 11;
+            this.lstbCola.FormattingEnabled = true;
+            this.lstbCola.Location = new System.Drawing.Point(6, 19);
+            this.lstbCola.Name = "lstbCola";
+            this.lstbCola.Size = new System.Drawing.Size(158, 173);
+            this.lstbCola.TabIndex = 1;
             // 
             // dgvCola
             // 
@@ -265,14 +275,6 @@
             // 
             this.Column3.HeaderText = "Tràmite";
             this.Column3.Name = "Column3";
-            // 
-            // lstbCola
-            // 
-            this.lstbCola.FormattingEnabled = true;
-            this.lstbCola.Location = new System.Drawing.Point(6, 19);
-            this.lstbCola.Name = "lstbCola";
-            this.lstbCola.Size = new System.Drawing.Size(158, 173);
-            this.lstbCola.TabIndex = 1;
             // 
             // frmCola
             // 

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -69,5 +70,24 @@ namespace PryEdGaidoL
             }
         
         }
+
+        public void Recorrer (String NomArchivo)
+        {
+            clsNodo aux = Primero;
+            StreamWriter AD = new StreamWriter(NomArchivo, false, Encoding.UTF8);
+            AD.WriteLine("Lista de espera/n");
+            AD.WriteLine("Código,Nombre,Trámite");
+            while (aux != null)
+            {
+                AD.WriteLine(aux.Codigo);
+                AD.Write(";");
+                AD.Write(aux.Nombre);
+                AD.Write(";");
+                AD.WriteLine(aux.Tràmite);
+                aux = aux.Siguiente;
+            }
+            AD.Close();
+        }
+
     }
 }
