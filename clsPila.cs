@@ -1,30 +1,15 @@
 ﻿using System;
-using System.IO;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace PryEdGaidoL
 {
-    internal class clsArchivo
+    internal class clsPila
     {
-
-
-        public string NomArchivo = "";
-        
-        private void EnsureFilePath()
-        {
-            if (string.IsNullOrWhiteSpace(NomArchivo))
-                throw new InvalidOperationException("NomArchivo no está definido.");
-        }
-
-        public void Grabar(string Dato)
-        {
-            EnsureFilePath();
-            using (var sw = new StreamWriter(NomArchivo, true))
-            {
-                sw.WriteLine(Dato);
-            }
-        }
-
         public void Recorrer(ListBox lstDatos)
         {
             lstDatos.Items.Clear();
@@ -81,19 +66,6 @@ namespace PryEdGaidoL
             }
         }
 
-        public void Recorrer(ComboBox cmb)
-        {
-            cmb.Items.Clear();
-            if (string.IsNullOrWhiteSpace(NomArchivo) || !File.Exists(NomArchivo)) return;
-
-            using (var sr = new StreamReader(NomArchivo))
-            {
-                string DatoLeido;
-                while ((DatoLeido = sr.ReadLine()) != null)
-                {
-                    cmb.Items.Add(DatoLeido);
-                }
-            }
-        }
+       
     }
 }
