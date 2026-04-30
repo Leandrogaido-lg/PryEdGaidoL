@@ -10,6 +10,7 @@ namespace PryEdGaidoL
 {
     internal class clsPila
     {
+        public string NomArchivo = "";
         private clsNodo pri;
         
         public clsNodo Primero
@@ -61,7 +62,6 @@ namespace PryEdGaidoL
         {
             lstDatos.Items.Clear();
             string DatoLeido = "";
-            string NomArchivo = null;
             if (!File.Exists(NomArchivo)) return;
             StreamReader AD = new StreamReader(NomArchivo);
             DatoLeido = AD.ReadLine();

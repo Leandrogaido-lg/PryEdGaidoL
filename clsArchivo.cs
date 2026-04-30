@@ -10,19 +10,14 @@ namespace PryEdGaidoL
 
         public string NomArchivo = "";
         
-        private void EnsureFilePath()
-        {
-            if (string.IsNullOrWhiteSpace(NomArchivo))
-                throw new InvalidOperationException("NomArchivo no está definido.");
-        }
+        
 
         public void Grabar(string Dato)
         {
-            EnsureFilePath();
-            using (var sw = new StreamWriter(NomArchivo, true))
-            {
-                sw.WriteLine(Dato);
-            }
+            StreamWriter AD = new StreamWriter(NomArchivo, true);
+             AD.WriteLine(Dato);
+             AD.Close();
+            
         }
 
         public void Recorrer(ListBox lstDatos)
@@ -43,53 +38,51 @@ namespace PryEdGaidoL
 
         public void BorrarTodo()
         {
-            EnsureFilePath();
-            // Truncate or create the file empty
-            File.WriteAllText(NomArchivo, string.Empty);
+            StreamWriter AD = new StreamWriter(NomArchivo, false);
+                AD.Close();
         }
 
         public void Grabar(string Dato1, string Dato2, string Dato3)
         {
-            EnsureFilePath();
-            using (var sw = new StreamWriter(NomArchivo, true))
-            {
-                sw.Write(Dato1);
-                sw.Write(";");
-                sw.Write(Dato2);
-                sw.Write(";");
-                sw.WriteLine(Dato3);
-            }
+
+            StreamWriter AD = new StreamWriter(NomArchivo, true);
+            
+                AD.Write(Dato1);
+                AD.Write(";");
+                AD.Write(Dato2);
+                AD.Write(";");
+                AD.WriteLine(Dato3);
+                AD.Close();
+            
+            
         }
 
         public void Recorrer(DataGridView Grilla)
         {
-            if (string.IsNullOrWhiteSpace(NomArchivo) || !File.Exists(NomArchivo))
-            {
-                Grilla.Rows.Clear();
-                return;
-            }
+           
 
             Grilla.Rows.Clear();
-            using (var sr = new StreamReader(NomArchivo))
-            {
                 string DatoLeido;
-                while ((DatoLeido = sr.ReadLine()) != null)
+                if (!File.Exists(NomArchivo)) return;
+                StreamReader AD = new StreamReader(NomArchivo);
+                DatoLeido = AD.ReadLine();
+
+            while (DatoLeido  != null)
                 {
-                    var cols = DatoLeido.Split(';');
-                    Grilla.Rows.Add(cols);
-                }
+                    Grilla.Rows.Add(DatoLeido.Split(';'));
+                    DatoLeido = AD.ReadLine();
             }
+            AD.Close();
         }
 
         public void Recorrer(ComboBox cmb)
         {
             cmb.Items.Clear();
-            if (string.IsNullOrWhiteSpace(NomArchivo) || !File.Exists(NomArchivo)) return;
-
-            using (var sr = new StreamReader(NomArchivo))
+            if  (!File.Exists(NomArchivo)) return;
+            using ( StreamReader AD = new StreamReader(NomArchivo))
             {
                 string DatoLeido;
-                while ((DatoLeido = sr.ReadLine()) != null)
+                while ((DatoLeido = AD.ReadLine()) != null)
                 {
                     cmb.Items.Add(DatoLeido);
                 }
