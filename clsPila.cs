@@ -10,10 +10,58 @@ namespace PryEdGaidoL
 {
     internal class clsPila
     {
+        private clsNodo pri;
+        
+        public clsNodo Primero
+        { 
+            get { return pri; } 
+            set { pri = value; }
+        }
+
+        public void Agregar(clsNodo Nuevo)
+        {
+            if (Primero == null)
+            {
+                Primero = Nuevo;
+            }
+            else
+            {
+                Nuevo.Siguiente = Primero;
+                Primero = Nuevo;
+
+
+            }
+        }
+
+
+        public void Eliminar()
+        {
+            if (Primero == null)
+            {
+                Primero = Primero.Siguiente;
+                
+            
+            }
+        
+        }
+
+        public void Recorrer(DataGridView Grilla)
+        {
+            clsNodo aux = Primero;
+            Grilla.Rows.Clear();
+            while (aux != null)
+            {
+                Grilla.Rows.Add(aux.Codigo, aux.Nombre, aux.Tràmite);
+                aux = aux.Siguiente;
+            }
+
+        }
+
         public void Recorrer(ListBox lstDatos)
         {
             lstDatos.Items.Clear();
             string DatoLeido = "";
+            string NomArchivo = null;
             if (!File.Exists(NomArchivo)) return;
             StreamReader AD = new StreamReader(NomArchivo);
             DatoLeido = AD.ReadLine();
@@ -25,47 +73,5 @@ namespace PryEdGaidoL
             AD.Close();
         }
 
-
-        public void BorrarTodo()
-        {
-            EnsureFilePath();
-            // Truncate or create the file empty
-            File.WriteAllText(NomArchivo, string.Empty);
-        }
-
-        public void Grabar(string Dato1, string Dato2, string Dato3)
-        {
-            EnsureFilePath();
-            using (var sw = new StreamWriter(NomArchivo, true))
-            {
-                sw.Write(Dato1);
-                sw.Write(";");
-                sw.Write(Dato2);
-                sw.Write(";");
-                sw.WriteLine(Dato3);
-            }
-        }
-
-        public void Recorrer(DataGridView Grilla)
-        {
-            if (string.IsNullOrWhiteSpace(NomArchivo) || !File.Exists(NomArchivo))
-            {
-                Grilla.Rows.Clear();
-                return;
-            }
-
-            Grilla.Rows.Clear();
-            using (var sr = new StreamReader(NomArchivo))
-            {
-                string DatoLeido;
-                while ((DatoLeido = sr.ReadLine()) != null)
-                {
-                    var cols = DatoLeido.Split(';');
-                    Grilla.Rows.Add(cols);
-                }
-            }
-        }
-
-       
     }
 }

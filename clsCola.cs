@@ -88,6 +88,20 @@ namespace PryEdGaidoL
             }
             AD.Close();
         }
-
+        public void Recorrer(ListBox lstDatos)
+        {
+            lstDatos.Items.Clear();
+            string DatoLeido = "";
+            string NomArchivo = null;
+            if (!File.Exists(NomArchivo)) return;
+            StreamReader AD = new StreamReader(NomArchivo);
+            DatoLeido = AD.ReadLine();
+            while (DatoLeido != null)
+            {
+                lstDatos.Items.Add(DatoLeido);
+                DatoLeido = AD.ReadLine();
+            }
+            AD.Close();
+        }
     }
 }
