@@ -17,9 +17,16 @@ namespace PryEdGaidoL
             InitializeComponent();
         }
 
-        
-        
-
-        
-    }
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            if (objLista.Primero != null)
+            {
+                objLista.Eliminar();
+                MessageBox.Show("Elemento eliminado");
+            }
+            else
+            {
+                MessageBox.Show("La lista está vacía");
+            }
+        }
 }

@@ -12,7 +12,10 @@ namespace PryEdGaidoL
         private String nom;
         private String tra;
         private clsNodo sig;
-       
+        private clsNodo ant;
+        private clsNodo Primero;
+        private clsNodo Ultimo;
+
         public Int32 Codigo
         {
             get { return cod; }
