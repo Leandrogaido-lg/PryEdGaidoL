@@ -40,7 +40,21 @@ namespace PryEdGaidoL
             }
         }
 
-        //private void txtNombreC_TextChanged(object sender, EventArgs e)
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            if (lstbColores.Items.Count == 0)
+            {
+                MessageBox.Show("No hay Colores Cargados para borrar");
+                return;
+            }
+            clsArchivo colores = new clsArchivo();
+            colores.NomArchivo = "Colores.csv";
+            colores.BorrarTodo();
+            colores.Recorrer(lstbColores);
+            MessageBox.Show("Datos Borrados");
+        }
+
+        
 
 
 

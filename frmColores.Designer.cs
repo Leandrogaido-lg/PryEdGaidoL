@@ -28,22 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnListarC = new System.Windows.Forms.Button();
+            this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnGrabarC = new System.Windows.Forms.Button();
             this.lblNombreC = new System.Windows.Forms.Label();
             this.lstbColores = new System.Windows.Forms.ListBox();
             this.txtNombreC = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // btnListarC
+            // btnLimpiar
             // 
-            this.btnListarC.Location = new System.Drawing.Point(24, 176);
-            this.btnListarC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnListarC.Name = "btnListarC";
-            this.btnListarC.Size = new System.Drawing.Size(163, 42);
-            this.btnListarC.TabIndex = 0;
-            this.btnListarC.Text = "Listar";
-            this.btnListarC.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Location = new System.Drawing.Point(24, 176);
+            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(163, 42);
+            this.btnLimpiar.TabIndex = 0;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // btnGrabarC
             // 
@@ -95,7 +96,7 @@
             this.Controls.Add(this.lstbColores);
             this.Controls.Add(this.lblNombreC);
             this.Controls.Add(this.btnGrabarC);
-            this.Controls.Add(this.btnListarC);
+            this.Controls.Add(this.btnLimpiar);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmColores";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -107,7 +108,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnListarC;
+        private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.Button btnGrabarC;
         private System.Windows.Forms.Label lblNombreC;
         private System.Windows.Forms.ListBox lstbColores;

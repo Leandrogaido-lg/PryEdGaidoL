@@ -38,5 +38,29 @@ namespace PryEdGaidoL
         {
             CargarCarreras();
         }
+
+        private void txtCodigoA_TextChanged(object sender, EventArgs e)
+        {
+            if (txtCodigoA.Text == "")
+            {
+                txtNombreA.Enabled = false;
+            }
+            else
+            {
+                txtNombreA.Enabled = true;
+            }
+        }
+
+        private void txtNombreA_TextChanged(object sender, EventArgs e)
+        {
+            if (txtNombreA.Text == "")
+            {
+                cmbCarrera.Enabled = false;
+            }
+            else
+            {
+                cmbCarrera.Enabled = true;
+            }
+        }
     }
 }

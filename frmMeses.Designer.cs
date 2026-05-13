@@ -30,7 +30,7 @@
         {
             this.lblNombre = new System.Windows.Forms.Label();
             this.txtNombreM = new System.Windows.Forms.TextBox();
-            this.btnListar = new System.Windows.Forms.Button();
+            this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnGrabar = new System.Windows.Forms.Button();
             this.lstbMeses = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
@@ -55,15 +55,16 @@
             this.txtNombreM.TabIndex = 1;
             this.txtNombreM.TextChanged += new System.EventHandler(this.txtNombreM_TextChanged);
             // 
-            // btnListar
+            // btnLimpiar
             // 
-            this.btnListar.Location = new System.Drawing.Point(43, 166);
-            this.btnListar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnListar.Name = "btnListar";
-            this.btnListar.Size = new System.Drawing.Size(181, 34);
-            this.btnListar.TabIndex = 2;
-            this.btnListar.Text = "Listar";
-            this.btnListar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Location = new System.Drawing.Point(43, 166);
+            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(181, 34);
+            this.btnLimpiar.TabIndex = 2;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnListar_Click);
             // 
             // btnGrabar
             // 
@@ -93,7 +94,7 @@
             this.ClientSize = new System.Drawing.Size(464, 462);
             this.Controls.Add(this.lstbMeses);
             this.Controls.Add(this.btnGrabar);
-            this.Controls.Add(this.btnListar);
+            this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.txtNombreM);
             this.Controls.Add(this.lblNombre);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -109,7 +110,7 @@
 
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.TextBox txtNombreM;
-        private System.Windows.Forms.Button btnListar;
+        private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.Button btnGrabar;
         private System.Windows.Forms.ListBox lstbMeses;
     }

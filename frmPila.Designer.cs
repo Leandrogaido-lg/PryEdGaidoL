@@ -63,9 +63,9 @@
             this.groupBox3.Controls.Add(this.dgvPila);
             this.groupBox3.Controls.Add(this.lstbPila);
             this.groupBox3.Location = new System.Drawing.Point(16, 246);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox3.Size = new System.Drawing.Size(725, 293);
             this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
@@ -79,7 +79,7 @@
             this.Column2,
             this.Column3});
             this.dgvPila.Location = new System.Drawing.Point(236, 25);
-            this.dgvPila.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvPila.Margin = new System.Windows.Forms.Padding(4);
             this.dgvPila.Name = "dgvPila";
             this.dgvPila.RowHeadersWidth = 51;
             this.dgvPila.Size = new System.Drawing.Size(481, 260);
@@ -111,7 +111,7 @@
             this.lstbPila.FormattingEnabled = true;
             this.lstbPila.ItemHeight = 16;
             this.lstbPila.Location = new System.Drawing.Point(8, 23);
-            this.lstbPila.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lstbPila.Margin = new System.Windows.Forms.Padding(4);
             this.lstbPila.Name = "lstbPila";
             this.lstbPila.Size = new System.Drawing.Size(217, 260);
             this.lstbPila.TabIndex = 0;
@@ -120,7 +120,7 @@
             // 
             this.pictureBox1.Image = global::PryEdGaidoL.Properties.Resources.PILA;
             this.pictureBox1.Location = new System.Drawing.Point(16, 15);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(227, 224);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -137,9 +137,9 @@
             this.groupBox2.Controls.Add(this.lblNombre1);
             this.groupBox2.Controls.Add(this.lblTramite1);
             this.groupBox2.Location = new System.Drawing.Point(259, 15);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(243, 207);
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
@@ -148,31 +148,34 @@
             // txtTramite
             // 
             this.txtTramite.Location = new System.Drawing.Point(91, 114);
-            this.txtTramite.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTramite.Margin = new System.Windows.Forms.Padding(4);
             this.txtTramite.Name = "txtTramite";
             this.txtTramite.Size = new System.Drawing.Size(132, 22);
             this.txtTramite.TabIndex = 10;
+            this.txtTramite.TextChanged += new System.EventHandler(this.txtTramite_TextChanged);
             // 
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(91, 75);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(132, 22);
             this.txtNombre.TabIndex = 9;
+            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
             // txtCodigo
             // 
             this.txtCodigo.Location = new System.Drawing.Point(120, 36);
-            this.txtCodigo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCodigo.Margin = new System.Windows.Forms.Padding(4);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(103, 22);
             this.txtCodigo.TabIndex = 8;
+            this.txtCodigo.TextChanged += new System.EventHandler(this.txtCodigo_TextChanged);
             // 
             // btnAgregar
             // 
             this.btnAgregar.Location = new System.Drawing.Point(12, 155);
-            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(215, 44);
             this.btnAgregar.TabIndex = 7;
@@ -223,9 +226,9 @@
             this.groupBox1.Controls.Add(this.lblNombre2);
             this.groupBox1.Controls.Add(this.lblCodigo2);
             this.groupBox1.Location = new System.Drawing.Point(501, 15);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(232, 207);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
@@ -264,12 +267,13 @@
             // btnEliminar
             // 
             this.btnEliminar.Location = new System.Drawing.Point(12, 155);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(212, 44);
             this.btnEliminar.TabIndex = 8;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // lblTramite2
             // 
@@ -313,7 +317,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox3);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmPila";
             this.Text = "Estructura de datos: Pila";
             this.groupBox3.ResumeLayout(false);

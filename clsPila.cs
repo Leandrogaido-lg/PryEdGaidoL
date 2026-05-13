@@ -73,5 +73,24 @@ namespace PryEdGaidoL
             AD.Close();
         }
 
+        public void Recorrer(String NombreArchivo)
+        {
+            clsNodo aux = Primero;
+            StreamWriter AD = new StreamWriter(NombreArchivo, false, Encoding.UTF8);
+            AD.WriteLine("Lista de espera\n");
+            AD.WriteLine("Codigo,Nombre,Tramite");
+
+            while (aux != null)
+            {
+                AD.Write(aux.Codigo);
+                AD.Write(';');
+                AD.Write(aux.Nombre);
+                AD.Write(';');
+                AD.WriteLine(aux.Tràmite);
+                aux = aux.Siguiente;
+            }
+            AD.Close();
+
+        }
     }
 }

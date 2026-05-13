@@ -59,6 +59,18 @@ namespace PryEdGaidoL
             x.Recorrer(lstbCarrera);
             MessageBox.Show("Datos Borrados");
         }
+
+        private void txtCarrera_TextChanged(object sender, EventArgs e)
+        {
+            if (txtCarrera.Text == "")
+            {
+                btnGrabar.Enabled = false;
+            }
+            else
+            {
+                btnGrabar.Enabled = true;
+            }
+        }
     }
 
 }       

@@ -17,7 +17,7 @@ namespace PryEdGaidoL
             StreamWriter AD = new StreamWriter(NomArchivo, true);
              AD.WriteLine(Dato);
              AD.Close();
-            
+                
         }
 
         public void Recorrer(ListBox lstDatos)
@@ -88,5 +88,7 @@ namespace PryEdGaidoL
                 }
             }
         }
+
+       
     }
 }

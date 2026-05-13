@@ -55,5 +55,42 @@ namespace PryEdGaidoL
                 lblTramite2.Text = "";
             }
         }
+
+        private void txtCodigo_TextChanged(object sender, EventArgs e)
+        {
+            if (txtCodigo.Text == "")
+            {
+                txtNombre.Enabled = false;
+            }
+            else
+            {
+                txtNombre.Enabled = true;
+            }
+        }
+
+        private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+            if (txtNombre.Text == "")
+            {
+                txtTramite.Enabled = false;
+            }
+            else
+            {
+                txtTramite.Enabled = true;
+            }
+        }
+
+        private void txtTramite_TextChanged(object sender, EventArgs e)
+        {
+
+            if (txtTramite.Text == "")
+            {
+                btnAgregar.Enabled = false;
+            }
+            else
+            {
+                btnAgregar.Enabled = true;
+            }
+        }
     }
 }

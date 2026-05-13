@@ -23,6 +23,10 @@ namespace PryEdGaidoL
             objClientes.NomArchivo = "Clientes.csv";
             objClientes.Grabar(txtCodigo.Text, txtNombreCl.Text, txtDeuda.Text);
             objClientes.Recorrer(dgvClientes);
+            MessageBox.Show("Cliente guardado");
+            txtCodigo.Clear();
+            txtNombreCl.Clear();
+            txtDeuda.Clear();
         }
     }
 }
