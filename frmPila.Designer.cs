@@ -320,6 +320,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmPila";
             this.Text = "Estructura de datos: Pila";
+//            this.Load += new System.EventHandler(this.frmPila_Load);
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPila)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

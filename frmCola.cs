@@ -43,6 +43,10 @@ namespace PryEdGaidoL
         {
             if (ColaEspera.Primero != null)
             {
+                lblSombraC.Text = Convert.ToString(ColaEspera.Primero.Codigo);
+                lblSombraN.Text = ColaEspera.Primero.Nombre;
+                lblSombraT.Text = ColaEspera.Primero.Tràmite;
+
                 ColaEspera.Eliminar();
                 ColaEspera.Recorrer(dgvCola);
                 ColaEspera.Recorrer("Cola.csv");
@@ -50,9 +54,9 @@ namespace PryEdGaidoL
             }
              else
             {
-                lblCodigo2.Text = "";
-                lblNombre2.Text = "";
-                lblTramite2.Text = "";
+                lblSombraC.Text = "";
+                lblSombraN.Text = "";
+                lblSombraT.Text = "";
             }
         }
 

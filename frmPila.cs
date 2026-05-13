@@ -94,5 +94,7 @@ namespace PryEdGaidoL
                 btnAgregar.Enabled = true;
             }
         }
+
+        
     }
 }

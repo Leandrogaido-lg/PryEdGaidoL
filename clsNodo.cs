@@ -13,9 +13,7 @@ namespace PryEdGaidoL
         private String tra;
         private clsNodo sig;
         private clsNodo ant;
-        private clsNodo pri;
-        private clsNodo ult;
-
+        
         public Int32 Codigo
         {
             get { return cod; }
@@ -47,18 +45,7 @@ namespace PryEdGaidoL
 
         }
 
-        public clsNodo Primero
-        {
-            get { return pri; }
-            set { pri = value; }
-        }
-
-        public clsNodo Ultimo
-        {
-            get { return ult; }
-            set { ult = value; }
-
-        }
+       
 
     }
 }

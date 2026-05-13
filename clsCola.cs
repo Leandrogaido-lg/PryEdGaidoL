@@ -28,7 +28,7 @@ namespace PryEdGaidoL
 
         public void Agregar(clsNodo Nuevo)
         {
-            if (Primero != null)
+            if (Primero == null)
             {
                 Primero = Nuevo;
                 Ultimo = Nuevo;
@@ -79,7 +79,7 @@ namespace PryEdGaidoL
             AD.WriteLine("Código,Nombre,Trámite");
             while (aux != null)
             {
-                AD.WriteLine(aux.Codigo);
+                AD.Write(aux.Codigo);
                 AD.Write(";");
                 AD.Write(aux.Nombre);
                 AD.Write(";");

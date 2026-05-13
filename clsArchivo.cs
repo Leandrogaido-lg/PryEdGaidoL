@@ -1,38 +1,54 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.IO;
 using System.Windows.Forms;
+using System.Drawing.Text;
+using System.Security.Cryptography.X509Certificates;
 
 namespace PryEdGaidoL
 {
     internal class clsArchivo
     {
 
-
-        public string NomArchivo = "";
-        
-        
-
-        public void Grabar(string Dato)
+        public String NomArchivo = "";
+       
+        public void Grabar(String Dato)
         {
+            
             StreamWriter AD = new StreamWriter(NomArchivo, true);
-             AD.WriteLine(Dato);
-             AD.Close();
+            AD.WriteLine(Dato);
+            AD.Close();
                 
         }
 
         public void Recorrer(ListBox lstDatos)
         {
             lstDatos.Items.Clear();
-            string DatoLeido = "";
-            if (!File.Exists(NomArchivo)) return;
-            StreamReader AD = new StreamReader(NomArchivo);
-            DatoLeido = AD.ReadLine();
-            while (DatoLeido != null)
+
+            if (string.IsNullOrEmpty(NomArchivo))
             {
-                lstDatos.Items.Add(DatoLeido);
-                DatoLeido = AD.ReadLine();
+                MessageBox.Show("Error: nombre de archivo vacío");
+                return;
             }
-            AD.Close();
+
+            if (!File.Exists(NomArchivo))
+            {
+                File.Create(NomArchivo).Close();
+                return;
+            }
+
+            using (StreamReader AD = new StreamReader(NomArchivo))
+            {
+                string DatoLeido;
+
+                while ((DatoLeido = AD.ReadLine()) != null)
+                {
+                    lstDatos.Items.Add(DatoLeido);
+                }
+            }
         }
 
 

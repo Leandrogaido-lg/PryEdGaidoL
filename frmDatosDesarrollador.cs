@@ -63,5 +63,20 @@ namespace PryEdGaidoL
             frmCola co = new frmCola();
             co.ShowDialog();
         }
+
+        private void pilaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPila p = new frmPila(); p.ShowDialog();
+        }
+
+        private void listaSimpleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListaSimple ls = new frmListaSimple(); ls.ShowDialog();
+        }
+
+        private void listaDobleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListaDoble ld = new frmListaDoble(); ld.ShowDialog();
+        }
     }
 }
