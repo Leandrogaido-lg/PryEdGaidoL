@@ -62,7 +62,7 @@
             // 
             this.pictureBox1.Image = global::PryEdGaidoL.Properties.Resources.lista_doble;
             this.pictureBox1.Location = new System.Drawing.Point(16, 15);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(219, 192);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -75,9 +75,9 @@
             this.groupBox2.Controls.Add(this.cmbCodigo);
             this.groupBox2.Controls.Add(this.lblCodigo2);
             this.groupBox2.Location = new System.Drawing.Point(489, 15);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(241, 129);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
@@ -86,7 +86,7 @@
             // btnEliminar
             // 
             this.btnEliminar.Location = new System.Drawing.Point(8, 73);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(225, 46);
             this.btnEliminar.TabIndex = 12;
@@ -98,7 +98,7 @@
             // 
             this.cmbCodigo.FormattingEnabled = true;
             this.cmbCodigo.Location = new System.Drawing.Point(85, 39);
-            this.cmbCodigo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbCodigo.Margin = new System.Windows.Forms.Padding(4);
             this.cmbCodigo.Name = "cmbCodigo";
             this.cmbCodigo.Size = new System.Drawing.Size(131, 24);
             this.cmbCodigo.TabIndex = 11;
@@ -118,9 +118,9 @@
             this.groupBox3.Controls.Add(this.dgvListaDoble);
             this.groupBox3.Controls.Add(this.lstbLista);
             this.groupBox3.Location = new System.Drawing.Point(16, 214);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox3.Size = new System.Drawing.Size(715, 294);
             this.groupBox3.TabIndex = 4;
             this.groupBox3.TabStop = false;
@@ -134,7 +134,7 @@
             this.nombre,
             this.Column1});
             this.dgvListaDoble.Location = new System.Drawing.Point(228, 25);
-            this.dgvListaDoble.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvListaDoble.Margin = new System.Windows.Forms.Padding(4);
             this.dgvListaDoble.Name = "dgvListaDoble";
             this.dgvListaDoble.RowHeadersWidth = 51;
             this.dgvListaDoble.Size = new System.Drawing.Size(479, 270);
@@ -166,7 +166,7 @@
             this.lstbLista.FormattingEnabled = true;
             this.lstbLista.ItemHeight = 16;
             this.lstbLista.Location = new System.Drawing.Point(9, 25);
-            this.lstbLista.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lstbLista.Margin = new System.Windows.Forms.Padding(4);
             this.lstbLista.Name = "lstbLista";
             this.lstbLista.Size = new System.Drawing.Size(208, 260);
             this.lstbLista.TabIndex = 0;
@@ -259,9 +259,9 @@
             this.groupBox4.Controls.Add(this.radDescendente);
             this.groupBox4.Controls.Add(this.radAscendente);
             this.groupBox4.Location = new System.Drawing.Point(481, 142);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox4.Size = new System.Drawing.Size(247, 66);
             this.groupBox4.TabIndex = 6;
             this.groupBox4.TabStop = false;
@@ -271,7 +271,7 @@
             // 
             this.radDescendente.AutoSize = true;
             this.radDescendente.Location = new System.Drawing.Point(16, 43);
-            this.radDescendente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radDescendente.Margin = new System.Windows.Forms.Padding(4);
             this.radDescendente.Name = "radDescendente";
             this.radDescendente.Size = new System.Drawing.Size(109, 20);
             this.radDescendente.TabIndex = 1;
@@ -284,7 +284,7 @@
             // 
             this.radAscendente.AutoSize = true;
             this.radAscendente.Location = new System.Drawing.Point(16, 23);
-            this.radAscendente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radAscendente.Margin = new System.Windows.Forms.Padding(4);
             this.radAscendente.Name = "radAscendente";
             this.radAscendente.Size = new System.Drawing.Size(100, 20);
             this.radAscendente.TabIndex = 0;
@@ -303,8 +303,9 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmListaDoble";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Lista Doble";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox2.ResumeLayout(false);

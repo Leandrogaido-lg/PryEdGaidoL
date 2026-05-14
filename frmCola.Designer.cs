@@ -62,7 +62,7 @@
             // 
             this.picBCola.Image = global::PryEdGaidoL.Properties.Resources.cola;
             this.picBCola.Location = new System.Drawing.Point(16, 15);
-            this.picBCola.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picBCola.Margin = new System.Windows.Forms.Padding(4);
             this.picBCola.Name = "picBCola";
             this.picBCola.Size = new System.Drawing.Size(245, 207);
             this.picBCola.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -79,9 +79,9 @@
             this.groupBox1.Controls.Add(this.lblNombre2);
             this.groupBox1.Controls.Add(this.lblCodigo2);
             this.groupBox1.Location = new System.Drawing.Point(512, 15);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(232, 207);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
@@ -120,7 +120,7 @@
             // btnEliminar
             // 
             this.btnEliminar.Location = new System.Drawing.Point(12, 155);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(212, 44);
             this.btnEliminar.TabIndex = 8;
@@ -171,9 +171,9 @@
             this.groupBox2.Controls.Add(this.lblNombre1);
             this.groupBox2.Controls.Add(this.lblTramite1);
             this.groupBox2.Location = new System.Drawing.Point(269, 15);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(235, 207);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
@@ -182,7 +182,7 @@
             // txtTramite
             // 
             this.txtTramite.Location = new System.Drawing.Point(91, 114);
-            this.txtTramite.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTramite.Margin = new System.Windows.Forms.Padding(4);
             this.txtTramite.Name = "txtTramite";
             this.txtTramite.Size = new System.Drawing.Size(132, 22);
             this.txtTramite.TabIndex = 10;
@@ -191,7 +191,7 @@
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(91, 75);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(132, 22);
             this.txtNombre.TabIndex = 9;
@@ -200,7 +200,7 @@
             // txtCodigo
             // 
             this.txtCodigo.Location = new System.Drawing.Point(120, 36);
-            this.txtCodigo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCodigo.Margin = new System.Windows.Forms.Padding(4);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(103, 22);
             this.txtCodigo.TabIndex = 8;
@@ -209,7 +209,7 @@
             // btnAgregar
             // 
             this.btnAgregar.Location = new System.Drawing.Point(12, 155);
-            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(215, 44);
             this.btnAgregar.TabIndex = 7;
@@ -255,9 +255,9 @@
             this.groupBox3.Controls.Add(this.lstbCola);
             this.groupBox3.Controls.Add(this.dgvCola);
             this.groupBox3.Location = new System.Drawing.Point(16, 242);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox3.Size = new System.Drawing.Size(728, 241);
             this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
@@ -268,7 +268,7 @@
             this.lstbCola.FormattingEnabled = true;
             this.lstbCola.ItemHeight = 16;
             this.lstbCola.Location = new System.Drawing.Point(8, 23);
-            this.lstbCola.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lstbCola.Margin = new System.Windows.Forms.Padding(4);
             this.lstbCola.Name = "lstbCola";
             this.lstbCola.Size = new System.Drawing.Size(209, 212);
             this.lstbCola.TabIndex = 1;
@@ -281,7 +281,7 @@
             this.Column2,
             this.Column3});
             this.dgvCola.Location = new System.Drawing.Point(227, 23);
-            this.dgvCola.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvCola.Margin = new System.Windows.Forms.Padding(4);
             this.dgvCola.Name = "dgvCola";
             this.dgvCola.RowHeadersWidth = 51;
             this.dgvCola.Size = new System.Drawing.Size(493, 210);
@@ -317,8 +317,9 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.picBCola);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmCola";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Estructura Dinàmica Lineal - Cola";
             ((System.ComponentModel.ISupportInitialize)(this.picBCola)).EndInit();
             this.groupBox1.ResumeLayout(false);

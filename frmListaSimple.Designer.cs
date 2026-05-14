@@ -262,6 +262,7 @@
             this.Controls.Add(this.gpLista);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmListaSimple";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Estructura de Datos Lineal: Lista Simple";
             this.gpLista.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvListaSimple)).EndInit();
