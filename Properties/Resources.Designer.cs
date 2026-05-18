@@ -63,9 +63,29 @@ namespace PryEdGaidoL.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap arbol {
+            get {
+                object obj = ResourceManager.GetObject("arbol", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cola {
             get {
                 object obj = ResourceManager.GetObject("cola", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap grafo {
+            get {
+                object obj = ResourceManager.GetObject("grafo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
