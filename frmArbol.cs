@@ -16,7 +16,7 @@ namespace PryEdGaidoL
         {
             InitializeComponent();
         }
-
+        clsArbol objArbol = new clsArbol();
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             clsNodo x = new clsNodo();
@@ -24,11 +24,9 @@ namespace PryEdGaidoL
             x.Nombre = txtNombre.Text;
             x.Tràmite = txtTramite.Text;
 
-            // 3. Pasar el nodo al método Agregar
-            miArbol.Agregar(nuevoNodo);
-
-            // 4. Actualizar la grilla
-            miArbol.Recorrer(dgvListado);
+            objArbol.Agregar(x);
+            objArbol.Recorrer(dgvListado);
+            objArbol.Recorrer(tvArbol);
 
             // Opcional: Limpiar las cajas de texto para la siguiente carga
             txtCodigo.Text = "";

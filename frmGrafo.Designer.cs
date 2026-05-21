@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGrafo));
             this.gbListar = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.clOrigen = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -442,6 +443,7 @@
             this.Controls.Add(this.gbConsulta);
             this.Controls.Add(this.gbCargaDatos);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmGrafo";
             this.Text = "Grafo";
             this.gbListar.ResumeLayout(false);

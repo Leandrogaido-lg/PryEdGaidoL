@@ -78,5 +78,17 @@ namespace PryEdGaidoL
         {
             frmListaDoble ld = new frmListaDoble(); ld.ShowDialog();
         }
+
+        private void arbolToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmArbol ar = new frmArbol();
+            ar.ShowDialog();
+        }
+
+        private void grafoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmGrafo g = new frmGrafo();
+            g.ShowDialog();
+        }
     }
 }
