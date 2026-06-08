@@ -48,7 +48,9 @@
   <ItemGroup>
     <Compile Include="clsArbol.cs" />
     <Compile Include="clsArchivo.cs" />
+    <Compile Include="clsBaseDatos.cs" />
     <Compile Include="clsCola.cs" />
+    <Compile Include="clsGrafo.cs" />
     <Compile Include="clsListaDoble.cs" />
     <Compile Include="clsListaSimple.cs" />
     <Compile Include="clsNodo.cs" />
