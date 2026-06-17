@@ -257,5 +257,13 @@
   <ItemGroup>
     <None Include="Resources\grafo.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Clientes1.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libreria.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
