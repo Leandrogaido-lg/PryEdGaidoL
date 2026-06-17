@@ -38,55 +38,56 @@
             // btnListar
             // 
             this.btnListar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnListar.Location = new System.Drawing.Point(500, 168);
-            this.btnListar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnListar.Location = new System.Drawing.Point(667, 207);
+            this.btnListar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnListar.Name = "btnListar";
-            this.btnListar.Size = new System.Drawing.Size(92, 25);
+            this.btnListar.Size = new System.Drawing.Size(123, 31);
             this.btnListar.TabIndex = 7;
             this.btnListar.Text = "Listar";
             this.btnListar.UseVisualStyleBackColor = true;
+            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
             // dgvConsultaSQL
             // 
             this.dgvConsultaSQL.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvConsultaSQL.Location = new System.Drawing.Point(11, 208);
-            this.dgvConsultaSQL.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvConsultaSQL.Location = new System.Drawing.Point(15, 256);
+            this.dgvConsultaSQL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvConsultaSQL.Name = "dgvConsultaSQL";
             this.dgvConsultaSQL.RowHeadersWidth = 51;
             this.dgvConsultaSQL.RowTemplate.Height = 24;
-            this.dgvConsultaSQL.Size = new System.Drawing.Size(578, 205);
+            this.dgvConsultaSQL.Size = new System.Drawing.Size(771, 252);
             this.dgvConsultaSQL.TabIndex = 6;
             // 
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(8, 3);
-            this.lblTitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTitulo.Location = new System.Drawing.Point(11, 4);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(135, 17);
+            this.lblTitulo.Size = new System.Drawing.Size(158, 20);
             this.lblTitulo.TabIndex = 5;
             this.lblTitulo.Text = "Consulta en SQL:";
             // 
             // txtConsulta
             // 
             this.txtConsulta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConsulta.Location = new System.Drawing.Point(11, 21);
-            this.txtConsulta.Margin = new System.Windows.Forms.Padding(2);
+            this.txtConsulta.Location = new System.Drawing.Point(15, 26);
+            this.txtConsulta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtConsulta.Multiline = true;
             this.txtConsulta.Name = "txtConsulta";
-            this.txtConsulta.Size = new System.Drawing.Size(583, 135);
+            this.txtConsulta.Size = new System.Drawing.Size(776, 165);
             this.txtConsulta.TabIndex = 4;
             // 
             // frmBdConsultaSql
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(593, 418);
+            this.ClientSize = new System.Drawing.Size(791, 514);
             this.Controls.Add(this.btnListar);
             this.Controls.Add(this.dgvConsultaSQL);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.txtConsulta);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmBdConsultaSql";
             this.Text = "frmBdConsultaSql";
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsultaSQL)).EndInit();

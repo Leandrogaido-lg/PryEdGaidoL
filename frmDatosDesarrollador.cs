@@ -90,5 +90,34 @@ namespace PryEdGaidoL
             frmGrafo g = new frmGrafo();
             g.ShowDialog();
         }
+
+        private void frmDatosDesarrollador_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void consultaDeUnaTablaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmBdConsultaTablas ct = new frmBdConsultaTablas();
+            ct.ShowDialog();
+        }
+
+        private void consultaDeBaseDeDatosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmBdConsultaSql csql = new frmBdConsultaSql();
+            csql.ShowDialog();
+        }
+
+        private void operacionesEnBaseDeDatosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmBdOperaciones bdo = new frmBdOperaciones();
+            bdo.ShowDialog();
+        }
+
+        private void consultasVariasConOperacionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmBdRepaso bdr = new frmBdRepaso();    
+            bdr.ShowDialog();
+        }
     }
 }

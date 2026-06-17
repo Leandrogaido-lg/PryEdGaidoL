@@ -50,7 +50,9 @@ namespace PryEdGaidoL
         {
             Grilla.Rows.Clear();
             Grilla.Columns.Clear();
-            Grilla.Columns.Clear();
+
+            Grilla.Columns.Add("ColOrigen", "Origen");
+
             for (Int32 i = 0; i < 5; i++)
             {
                 Grilla.Columns.Add("Destino" + i.ToString(), Ciudades[i]);

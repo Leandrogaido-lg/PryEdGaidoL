@@ -16,5 +16,11 @@ namespace PryEdGaidoL
         {
             InitializeComponent();
         }
+
+        private void btnListar_Click(object sender, EventArgs e)
+        {
+            clsBaseDatos BaseDatos = new clsBaseDatos();
+            BaseDatos.Listar(dgvConsultaSQL, txtConsulta.Text);
+        }
     }
 }
