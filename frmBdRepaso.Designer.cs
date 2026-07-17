@@ -38,21 +38,21 @@
             // dgvListar
             // 
             this.dgvListar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvListar.Location = new System.Drawing.Point(11, 66);
-            this.dgvListar.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvListar.Location = new System.Drawing.Point(15, 81);
+            this.dgvListar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvListar.Name = "dgvListar";
             this.dgvListar.RowHeadersWidth = 51;
             this.dgvListar.RowTemplate.Height = 24;
-            this.dgvListar.Size = new System.Drawing.Size(595, 317);
+            this.dgvListar.Size = new System.Drawing.Size(793, 390);
             this.dgvListar.TabIndex = 7;
             // 
             // btnListar
             // 
             this.btnListar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnListar.Location = new System.Drawing.Point(486, 397);
-            this.btnListar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnListar.Location = new System.Drawing.Point(648, 489);
+            this.btnListar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnListar.Name = "btnListar";
-            this.btnListar.Size = new System.Drawing.Size(119, 30);
+            this.btnListar.Size = new System.Drawing.Size(159, 37);
             this.btnListar.TabIndex = 6;
             this.btnListar.Text = "Listar";
             this.btnListar.UseVisualStyleBackColor = true;
@@ -62,32 +62,33 @@
             this.cmbEleccion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbEleccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbEleccion.FormattingEnabled = true;
-            this.cmbEleccion.Location = new System.Drawing.Point(254, 22);
-            this.cmbEleccion.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbEleccion.Location = new System.Drawing.Point(339, 27);
+            this.cmbEleccion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbEleccion.Name = "cmbEleccion";
-            this.cmbEleccion.Size = new System.Drawing.Size(254, 23);
+            this.cmbEleccion.Size = new System.Drawing.Size(337, 26);
             this.cmbEleccion.TabIndex = 5;
+            this.cmbEleccion.SelectedIndexChanged += new System.EventHandler(this.cmbEleccion_SelectedIndexChanged);
             // 
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(7, 25);
-            this.lblTitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTitulo.Location = new System.Drawing.Point(9, 31);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(231, 15);
+            this.lblTitulo.Size = new System.Drawing.Size(277, 18);
             this.lblTitulo.TabIndex = 4;
             this.lblTitulo.Text = "Operación a realizar en la base de datos:";
             // 
             // frmBdRepaso
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(616, 438);
+            this.ClientSize = new System.Drawing.Size(821, 539);
             this.Controls.Add(this.dgvListar);
             this.Controls.Add(this.btnListar);
             this.Controls.Add(this.cmbEleccion);
             this.Controls.Add(this.lblTitulo);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmBdRepaso";
             this.Text = "Repaso de operaciones de Base de Datos";
             ((System.ComponentModel.ISupportInitialize)(this.dgvListar)).EndInit();

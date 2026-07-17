@@ -52,6 +52,11 @@
             this.cmbTablas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbTablas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbTablas.FormattingEnabled = true;
+            this.cmbTablas.Items.AddRange(new object[] {
+            "Autor",
+            "Idioma",
+            "Libro",
+            "Pais"});
             this.cmbTablas.Location = new System.Drawing.Point(256, 439);
             this.cmbTablas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbTablas.Name = "cmbTablas";
@@ -88,7 +93,7 @@
             this.Controls.Add(this.cmbTablas);
             this.Controls.Add(this.lblTabla);
             this.Controls.Add(this.dgvConsultaTabla);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmBdConsultaTablas";
             this.Text = "frmBdConsultaTablas";
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsultaTabla)).EndInit();
